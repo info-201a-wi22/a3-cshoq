@@ -1,0 +1,41 @@
+---
+title: "Incarceration Report"
+author: "Cullen Shoquist"
+output: html_document
+---
+
+  The United States has one of the highest incarceration rates in the entire world. Within the US, there are many factors that, with one of the main factors being racism. I decided to focus on both the high levels of the United States inmate population and the disparity between black and white people in the US incarceration system. I think by looking at these variables, we can better understand the problems in our country’s judicial system.
+
+  As populations have grown in the United States, so have the populations within our prison systems. As of 2018 there were over 737,000 inmates in United States jails. That is more than the population of some states. Speaking of states, some states are worse than others when it comes to their total population behind bars. California had the most inmates in their jail system. However, this doesn't necessarily mean that they have the worst incarceration rates as California is also the most populous state overall so it would make sense that they house the most inmates.  The next thing I wanted to look at was the difference between the incarceration rate of black people compared to the overall incarceration rate. Unsurprisingly to the narratives in the United States, 2.5% of the overall black population was incarcerated compared to the overall general population at just under half a percent. This shows that the United States has a problem with over jailing black citizens. Next I wanted to turn towards my own state and look at the issues we have here. The first thing I wanted to look at was which county in Washington had the highest incarceration rate. It ended up being Yakima. Living in Washington, I have definetly heard about the crime and jailing rates in Yakima and it was interesting to see the rumors backed up by data. Lastly I looked right at king county and looked at how the jail population grew (or shrunk) year over year. Surprisingly, jail populations went down 4 of the last 10 years of data. I was glad to see that King County was not increasing their jail populations continuously year after year. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+## Variables Over Time
+This line graph shows the jail populations since 1970 of Washington counties with total populations over 100,000 people. King County obviously has the highest jail population but it also has the highest general population.
+```{r timechart, echo = FALSE, include = TRUE, message = FALSE}
+source("/Users/cullenshoquist/desktop/info-201/a3-cshoq/source/timechart.R", print.eval = TRUE)
+library(dplyr)
+library(ggplot2)
+```
+
+## Comaparing Variables
+This scatter plot shows the Black to White population ratio in every US county in 2018 compared to the Black to White jail population ratio. Rural seems to stand out as having the most outliers.
+```{r 2varchart, echo = FALSE, include = TRUE, message = FALSE}
+source("/Users/cullenshoquist/desktop/info-201/a3-cshoq/source/2varchart.R", print.eval = TRUE)
+library(dplyr)
+library(ggplot2)
+```
+
+## Mapping Data
+This map shows the Black to White jail ratio in United States. It appears as the South has the highest ratio based on the color intesity. 
+```{r map, echo = FALSE, include= TRUE, message = FALSE}
+source("/Users/cullenshoquist/desktop/info-201/a3-cshoq/source/map.R", print.eval = TRUE)
+library(dplyr)
+library(ggplot2)
+library(usdata)
+```
+
