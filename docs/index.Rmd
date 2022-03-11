@@ -23,7 +23,7 @@ library(ggplot2)
 ```
 
 ## Comaparing Variables
-This scatter plot shows the Black to White population ratio in every US county in 2018 compared to the Black to White jail population ratio. Rural seems to stand out as having the most outliers.
+This scatter plot shows the Black to White population ratio in every US county in 2018 compared to the Black to White jail population ratio. "Rural" areas appear to have the most outliers when it comes to having a higher ratio of black people in jail than in their population, meaning their could be more problematic attitudes towards black people in rural areas. 
 ```{r 2varchart, echo = FALSE, include = TRUE, message = FALSE}
 source("/Users/cullenshoquist/desktop/info-201/a3-cshoq/source/2varchart.R", print.eval = TRUE)
 library(dplyr)
@@ -31,7 +31,7 @@ library(ggplot2)
 ```
 
 ## Mapping Data
-This map shows the Black to White jail ratio in United States. It appears as the South has the highest ratio based on the color intesity. 
+This map shows the Black to White jail ratio in United States. It appears as the South has the highest ratio based on the color intensity. This means that in the south, there is a higher percent of black people in jail than there should be according to their population within the state within the south. Similar to the last visualization, this could mean there is a problem with how frequently Black people are incarcerated in the South.
 ```{r map, echo = FALSE, include= TRUE, message = FALSE}
 source("/Users/cullenshoquist/desktop/info-201/a3-cshoq/source/map.R", print.eval = TRUE)
 library(dplyr)

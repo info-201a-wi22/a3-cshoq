@@ -47,7 +47,7 @@ library(ggplot2)
 kcp_data <- inmate_data %>%
   filter(state == "WA") %>%
   select(year, county_name,total_jail_pop, total_pop) %>%
-  filter(total_pop >= 100000)
+  filter(total_pop >= 220000)
   
 
 
