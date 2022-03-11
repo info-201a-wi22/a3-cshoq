@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ## Variables Over Time
-This line graph shows the jail populations since 1970 of Washington counties with total populations over 100,000 people. King County obviously has the highest jail population but it also has the highest general population.
+This line graph shows the jail populations since 1970 of Washington counties with total populations over 220,000 people. King County probably has the highest jail population because it also has the highest general population which makes sense.
 ```{r timechart, echo = FALSE, include = TRUE, message = FALSE}
 source("/Users/cullenshoquist/desktop/info-201/a3-cshoq/source/timechart.R", print.eval = TRUE)
 library(dplyr)
